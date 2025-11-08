@@ -101,20 +101,18 @@ const Abacus = () => {
                 <div className="relative min-w-fit">
                     <div className="absolute top-0 left-0 right-0 h-3 -mt-3 bg-gray-800 rounded-t-lg"></div>
                     <div className="relative flex gap-2 p-3 rounded sm:gap-3 bg-gradient-to-b from-slate-800 to-slate-900 sm:p-4" style={{ userSelect: 'none' }}>
-                        <div className="absolute left-0 right-0 h-1.5 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400 rounded shadow-lg z-20" style={{ top: '38%', boxShadow: '0 0 10px rgba(250, 204, 21, 0.5)' }}></div>
+                        <div className="absolute left-0 right-0 h-1.5 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400 rounded shadow-lg z-20" style={{ top: '31%', boxShadow: '0 0 10px rgba(250, 204, 21, 0.5)' }}></div>
 
                         {columns.slice(0, columnCount).map((col, colIdx) => (
                             <div key={colIdx} className="relative flex flex-col items-center">
                                 <div className="absolute top-0 bottom-0 w-1.5 bg-gradient-to-b from-gray-600 via-gray-500 to-gray-600 left-1/2 -translate-x-1/2 rounded-full shadow-inner"></div>
-                                <div
-                                    className="relative flex flex-col items-center justify-start h-24 mb-2"
-                                >
+                                <div className="relative flex flex-col items-center justify-start h-24 mb-2">
                                     <button
                                         onClick={() => toggleUpperBead(colIdx)}
                                         className="relative z-30 transition-all duration-300 ease-out border-2 rounded-full shadow-xl w-9 h-9 hover:scale-110 bg-gradient-to-br from-emerald-400 to-emerald-600 border-emerald-700"
                                         style={{
-                                            marginTop: col.upperActive ? 'auto' : '8px',
-                                            marginBottom: col.upperActive ? '8px' : 'auto',
+                                            marginTop: col.upperActive ? 'auto' : '0px',
+                                            marginBottom: col.upperActive ? '0px' : 'auto',
                                             cursor: 'pointer',
                                             boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.3)',
                                             transform: animating[`upper-${colIdx}`] ? 'scale(0.95)' : 'scale(1)'
@@ -137,7 +135,7 @@ const Abacus = () => {
                                                     transform: animating[`lower-${colIdx}`] ? 'scale(0.95)' : 'scale(1)',
                                                     position: 'absolute',
                                                     top: isActive
-                                                        ? `${8 + beadIdx * 40}px`
+                                                        ? `${-24 + beadIdx * 40}px`
                                                         : `${30 + (beadIdx * 50)}px`
                                                 }}
                                             />
