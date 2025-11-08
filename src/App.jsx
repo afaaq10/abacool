@@ -168,6 +168,11 @@ const Abacus = () => {
                     <span className="font-semibold text-white">How to use:</span> Touch any bead to move it to the bar. Touch an active bead to move it back.
                 </p>
             </div>
+            <footer className="mt-6">
+                <p className="text-sm text-gray-400">
+                    Made with <span className="text-red-500">❤️</span> by <span className="font-semibold text-purple-400">Afaaq Majeed</span>
+                </p>
+            </footer>
         </div>
     );
 };
