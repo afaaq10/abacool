@@ -6,21 +6,21 @@
  * @copyright 2025 Afaaq Majeed
  */
 
-import React, { useState } from 'react';
+import React from 'react';
 import { RotateCcw } from 'lucide-react';
 
 const Abacus = () => {
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = React.useState(false);
     const columnCount = isMobile ? 7 : 13;
 
-    const [columns, setColumns] = useState(
+    const [columns, setColumns] = React.useState(
         Array(13).fill(null).map(() => ({
             upperActive: false,
             lowerCount: 0
         }))
     );
 
-    const [animating, setAnimating] = useState({});
+    const [animating, setAnimating] = React.useState({});
 
     React.useEffect(() => {
         const checkMobile = () => {
