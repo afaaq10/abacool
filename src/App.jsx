@@ -97,7 +97,7 @@ const Abacus = () => {
             <div className="mb-8 text-center">
                 <h1 className="mb-2 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 drop-shadow-[0_0_10px_rgba(168,85,247,0.7)]">ABACOOL</h1>
             </div>
-            <div className="max-w-full p-3 overflow-x-auto border-4 border-gray-700 rounded-lg shadow-2xl bg-gradient-to-b from-gray-800 to-gray-900 sm:p-6">
+            <div className="max-w-full p-3 border-4 border-gray-700 rounded-lg shadow-2xl bg-gradient-to-b from-gray-800 to-gray-900 sm:p-6">
                 <div className="relative min-w-fit">
                     <div className="absolute top-0 left-0 right-0 h-3 -mt-3 bg-gray-800 rounded-t-lg"></div>
                     <div className="relative flex gap-2 p-3 rounded sm:gap-3 bg-gradient-to-b from-slate-800 to-slate-900 sm:p-4" style={{ userSelect: 'none' }}>
