@@ -95,7 +95,7 @@ const Abacus = () => {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-8 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
             <div className="mb-8 text-center">
-                <h1 className="mb-2 text-4xl font-bold text-white">ABACOOL</h1>
+                <h1 className="mb-2 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 drop-shadow-[0_0_10px_rgba(168,85,247,0.7)]">ABACOOL</h1>
             </div>
             <div className="max-w-full p-3 overflow-x-auto border-4 border-gray-700 rounded-lg shadow-2xl bg-gradient-to-b from-gray-800 to-gray-900 sm:p-6">
                 <div className="relative min-w-fit">
